@@ -15,7 +15,14 @@
 
 <img align="center" src="https://res.cloudinary.com/yormian/image/upload/v1556060900/logos.png">
 
-#### Listas de Dependencias
+### Que hacer antes de ejecutar
+1. npm install
+2. npm run build
+3. npm run start 
+
+#### Este último les abrirá el navegador y mostrara la página 
+
+## Listas de Dependencias
 - [webpack](https://github.com/webpack/webpack)
 - [webpack-cli](https://www.npmjs.com/package/webpack-cli)
 - [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
@@ -31,8 +38,8 @@
 - [file-loader](https://github.com/webpack-contrib/file-loader)
 - [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 
-### Dependencias de desarrollo
+## Dependencias de desarrollo
 ```npm i -D webpack webpack-cli html-webpack-plugin html-webpack-harddisk-plugin pug-loader image-webpack-loader css-loader mini-css-extract-plugin sass-loader node-sass autoprefixer postcss-loader file-loader webpack-dev-server```
 
-#### Dependencias 
+## Dependencias 
 ```npm i --save rimraf jquery```
