@@ -15,6 +15,8 @@
 
 <img align="center" src="https://res.cloudinary.com/yormian/image/upload/v1556060900/logos.png">
 
+*Nota:* Para hacer uso de este WorkFlow debes tener instalado Node.. 
+
 ### Que hacer antes de ejecutar
 1. npm install
 2. npm run build
@@ -33,13 +35,31 @@
 - [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
 - [sass-loader](https://github.com/webpack-contrib/sass-loader)
 - [node-sass](https://github.com/sass/node-sass)
+- [postcss-loader](https://github.com/postcss/postcss-loader)
 - [autoprefixer](https://github.com/postcss/autoprefixer#readme)
 - [postcss-loader](https://github.com/postcss/postcss-loader)
 - [file-loader](https://github.com/webpack-contrib/file-loader)
 - [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 
-## Dependencias de desarrollo
+
+Si quieres aprender a como configurar desde cero este WorkFlow e instalar todas las dependencias sigue estos pasos
+
+#### Videos Tutiales
+- [Curso Practico de Webpack](https://www.youtube.com/watch?v=vF2emKbaP4M)
+
+- [Webpack WorkFlow ](https://www.youtube.com/watch?v=7e5apiL6tVQ)
+
+#### Dependencias de desarrollo 
 ```npm i -D webpack webpack-cli html-webpack-plugin html-webpack-harddisk-plugin pug-loader image-webpack-loader css-loader mini-css-extract-plugin sass-loader node-sass autoprefixer postcss-loader file-loader webpack-dev-server```
 
-## Dependencias 
-```npm i --save rimraf jquery```
+#### Dependencias 
+```npm i --save rimraf  bootstrap popper.js```
+
+#### Pasos para el uso de Bootstrap
+- [install Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/download/#npm) 
+- [Import Webapck](https://getbootstrap.com/docs/4.3/getting-started/webpack/) 
+- [install popper](https://popper.js.org/)
+
+#### Elementos de terceros
+- [Snippets](https://startbootstrap.com/snippets/)
+- [popper](https://popper.js.org/)
