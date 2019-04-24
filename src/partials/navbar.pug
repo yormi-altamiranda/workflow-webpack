@@ -1,0 +1,17 @@
+// Navigation
+nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+    .container
+        a.navbar-brand(href='#')
+            img(src="static/img/logo-plantilla.svg" width="40" height="40" alt="")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+                li.nav-item.active
+                    a.nav-link(href='index.html')
+                        | Home
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='gallery.html') Gallery
+                li.nav-item
+                    a.nav-link(href='team.html') Teams
