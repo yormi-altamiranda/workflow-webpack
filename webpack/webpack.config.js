@@ -25,14 +25,26 @@ module.exports = {
                 use: ['pug-loader']
             },
 
-            // CSS
+            // SCSS
             {
                 // test: /\.scss$/,
                 test: /\.(sa|sc|c)ss$/,
                 use:[
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: function() {
+                                return [
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+
+                    },
+                    // 'sass-loader',
+                    {loader: 'sass-loader'}
                 ]
             },
 
@@ -96,18 +108,18 @@ module.exports = {
         // About
         new HtmlWebpackPlugin({
             alwaysWriteToDisk: true,
-            title: 'Services',
+            title: 'Gallery',
             hash: true,
-            filename: 'services.html',
-            template: '!!pug-loader!./src/services.pug'
+            filename: 'gallery.html',
+            template: '!!pug-loader!./src/gallery.pug'
         }),
         // Contact US
         new HtmlWebpackPlugin({
             alwaysWriteToDisk: true,
-            title: 'Contact US',
+            title: 'Teams',
             hash: true,
-            filename: 'contact.html',
-            template: '!!pug-loader!./src/contact.pug'
+            filename: 'team.html',
+            template: '!!pug-loader!./src/team.pug'
         }),
         new HtmlWebpackHarddiskPlugin({
             outputPath: path.resolve(__dirname, '../dist')
