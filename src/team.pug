@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title= htmlWebpackPlugin.options.title
+    body
+        include /partials/navbar.pug
+        header.bg-dark.text-center.py-5.mb-4.mt-5
+            .container
+                h1.font-weight-light.text-white Meet the Team
+        // Page Content
+        .container
+            .row
+                // Team Member 1
+                .col-xl-3.col-md-6.mb-4
+                    .card.border-0.shadow
+                        img.card-img-top(src='https://source.unsplash.com/TMgQMXoglsM/500x350', alt='...')
+                        .card-body.text-center
+                            h5.card-title.mb-0 Team Member
+                            .card-text.text-black-50 Web Developer
+                // Team Member 2
+                .col-xl-3.col-md-6.mb-4
+                    .card.border-0.shadow
+                        img.card-img-top(src='https://source.unsplash.com/9UVmlIb0wJU/500x350', alt='...')
+                        .card-body.text-center
+                            h5.card-title.mb-0 Team Member
+                            .card-text.text-black-50 Web Developer
+                // Team Member 3
+                .col-xl-3.col-md-6.mb-4
+                    .card.border-0.shadow
+                        img.card-img-top(src='https://source.unsplash.com/sNut2MqSmds/500x350', alt='...')
+                        .card-body.text-center
+                            h5.card-title.mb-0 Team Member
+                            .card-text.text-black-50 Web Developer
+                // Team Member 4
+                .col-xl-3.col-md-6.mb-4
+                    .card.border-0.shadow
+                        img.card-img-top(src='https://source.unsplash.com/ZI6p3i9SbVU/500x350', alt='...')
+                        .card-body.text-center
+                            h5.card-title.mb-0 Team Member
+                            .card-text.text-black-50 Web Developer
+            // /.row
